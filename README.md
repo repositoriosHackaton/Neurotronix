@@ -1,5 +1,5 @@
-# PythonicWizards
-En este espacio se sube el código creado para el grupo de Pythonic Wizards de República Dominicana
+# Neurotonix
+En este espacio se sube el código creado para el grupo 
 
 Se debe agregar toda la documentación que ustedes consideren pertinente para la compresión de los modelos usados, la ejecución del código y los resultados obtenidos. 
 Puden, si desean, agregar imágenes o resultados obtenidos. 
