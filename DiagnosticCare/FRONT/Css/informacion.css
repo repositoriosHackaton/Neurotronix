@@ -1,0 +1,190 @@
+:root{
+    --azul-gradiente-text: linear-gradient(180deg, #00DDFF, #1A22EB);
+    --azul-gradiente-bootom: linear-gradient(90deg, #00DDFF, #1A22EB);
+    --bgservices: linear-gradient(to top, #012, #346);
+    --aliceblue: #F0F8FF;
+    --azul-claro-oscuro: #334565;
+    --azul-oscuro: #00022E;
+    --azul-claro: #0AF;
+    --verde-claro: #1AAE67;
+    --blanco: #FFF;
+    --negro: #000;
+    --azul: #00F;
+    --gris-claro: #FFF5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* contenido principal */
+#main-informacion{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-color: var(--aliceblue);
+    display: flex;
+}
+.main-informacion__encabezado{
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--azul-oscuro);
+    padding: 54px 50px;
+    gap: 30px;
+}
+.main-informacion__encabezado h1{
+    font-size: 36px;
+    color: var(--blanco);
+    font-weight: 400;
+    text-wrap: balance;
+}
+.main-informacion__encabezado button{
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+.main-informacion__container{
+    width: 65%;
+    height: 100%;
+    overflow: hidden;
+}
+.main-informacion__slider input{
+    visibility: hidden;
+    display: none;
+}
+.main-informacion__slider-bottoms{
+    position: absolute;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    bottom: 55px;
+    gap: 15px;
+}
+.main-informacion__slider-bottoms label{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: var(--azul-claro-oscuro);
+    cursor: pointer;
+    z-index: 10;
+    transition: 200ms ease-in-out;
+    opacity: .7;
+}
+.main-informacion__slider-bottoms label:hover{
+    scale: 1.2;
+    opacity: 1;
+}
+.main-informacion__slider input:nth-child(1):checked ~ .main-informacion__slider-bottoms label:nth-child(1),
+.main-informacion__slider input:nth-child(2):checked ~ .main-informacion__slider-bottoms label:nth-child(2),
+.main-informacion__slider input:nth-child(3):checked ~ .main-informacion__slider-bottoms label:nth-child(3){
+    opacity: 1;
+    width: 60px;
+    background-color: var(--azul);
+}
+.main-informacion__content{
+    position: relative;
+    width: 195vw;
+    display: flex;
+    transition: 400ms ease-in-out;
+}
+.firstslider, .secondslider, .thirdslider{
+    position: relative;
+    width: 65vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstslider{
+    background-image: url(../Imagenes/analisis-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.secondslider{
+    background-image: url(../Imagenes/analisis-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.thirdslider{
+    background-image: url(../Imagenes/analisis-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main-informacion__slider input:nth-child(1):checked ~ .main-informacion__content{
+    left: 0;
+}
+.main-informacion__slider input:nth-child(2):checked ~ .main-informacion__content{
+    left: -65vw;
+}
+.main-informacion__slider input:nth-child(3):checked ~ .main-informacion__content{
+    left: -130vw;
+}
+
+/* seccion de enfermedades comunes de la temporada */
+#section__enfermedades-comunes h2{
+    font-size: 48px;
+}
+/* seccion de recomendaciones y consejos */
+#section__recomendaciones{
+    width: 100%;
+    height: 75vh;
+    padding: 54px 50px 0 50px;
+    background-color: var(--aliceblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.section__recomendaciones-content{
+    max-width: 800px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.section__recomendaciones-content h2{
+    font-size: 48px;
+}
+.section__recomendaciones-content p{
+    font-size: 24px;
+}
+.section__recomendaciones-content form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section__recomendaciones-content form textarea{
+    width: 100%;
+    height: 200px;
+    font-size: 32px;
+    padding: 30px;
+    border-radius: 20px;
+    resize: none;
+}
+.section__recomendaciones-content form input{
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--azul-gradiente-bootom);
+    color: var(--blanco);
+    font-size: 24px;
+}
+.section__recomendaciones-content form input:hover{
+    opacity: .8;
+    transition: opacity .08s;
+}
+/* seccion de contactos */
+#section-contacto{
+    background: var(--aliceblue);
+}

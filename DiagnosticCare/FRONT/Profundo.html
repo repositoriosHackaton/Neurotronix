@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/Catalogo.css">
+    <link rel="stylesheet" href="./Css/Responsive.css">
+    <link rel="stylesheet" href="./Css/Index.css">
+    <link rel="stylesheet" href="./Css/Profundo.css">
+    <title>Diagnostic Care</title>
+</head>
+<body>
+    <!-- Creando el encabezado -->
+    <header id="header">
+        <!-- Creando el menu de navegacion -->
+        <nav id="nav">
+            <a href="./Index.html">
+                <div class="nav__logo">
+                    <img src="./Imagenes/Logo-3.svg" alt="img-logo">
+                    <h1>Diagnostic <br>
+                            Care</h1>
+                </div>
+            </a>
+            <i class="fa-solid fa-bars" id="menu-abrir"></i>
+            <ul class="nav__menu">
+                <i class="fa-solid fa-xmark" id="menu-cerrar"></i>
+                <li class="nav__list"><a href="Index.html" class="nav__link">Inicio</a></li>
+                <li class="nav__list"><a href="Analisis.html" class="nav__link link-active">Análisis</a></li>
+                <li class="nav__list"><a href="Catalogo.html" class="nav__link">Catálogo</a></li>
+                <li class="nav__list"><a href="Informacion.html" class="nav__link">Información</a></li>
+            </ul>
+        </nav>
+        <main id="main-catalogo">
+            <div class="main-catalogo__encabezado">
+                <h2>Diagnostic Care</h2>
+                <h3>Análisis Profundo</h3>
+                <img src="./Imagenes/encabezado_titulo2.png" alt="img-encabezado-titulo2">
+            </div>
+            <div class="main-catalogo__barra-de-busqueda-content">
+            </div>
+        </main>
+    </header>
+
+    <!--Seccion de analisis-->
+
+    <div class="container">
+        <div class="left-column">
+            <img src="./Imagenes/formimg.png" alt="Foto">
+        </div>
+        <div class="right-column">
+            <form id="consulta-form">
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad" name="edad">
+                </div>
+                <div class="form-group">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Síntomas:</label><br>
+                    <input type="checkbox" id="fiebre" name="sintomas" value="fiebre">
+                    <label class="checkbox-label" for="fiebre">Fiebre</label>
+                    <input type="checkbox" id="tos" name="sintomas" value="tos">
+                    <label class="checkbox-label" for="tos">Tos</label>
+                    <input type="checkbox" id="fatiga" name="sintomas" value="fatiga">
+                    <label class="checkbox-label" for="fatiga">Fatiga</label><br>
+                    <input type="checkbox" id="respiracion" name="sintomas" value="respiracion">
+                    <label class="checkbox-label" for="respiracion">Respiración Dificultosa</label>
+                </div>
+                <div class="form-group">
+                    <label for="presion">Presión Arterial (mmHg):</label>
+                    <input type="text" id="presion" name="presion">
+                </div>
+                <div class="form-group">
+                    <label for="colesterol">Nivel de Colesterol:</label>
+                    <input type="text" id="colesterol" name="colesterol">
+                </div>
+                <div class="form-group">
+                    <label for="alergias">Alergias:</label>
+                    <textarea id="alergias" name="alergias" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="enfermedades">Enfermedades Crónicas:</label>
+                    <textarea id="enfermedades" name="enfermedades" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar Consulta</button>
+            </form>
+        </div>
+    </div>
+     <!-- seccion de contactos -->
+     <section id="section-contacto">
+        <div class="section-contacto__container">
+            <h3>Contact Us</h3>
+            <div class="contacto__info-tel contacto-cont">
+                <img src="./Imagenes/telefono.png" alt="img-tel" class="contacto__icon-img">
+                <div class="info-tel__content inf-content">
+                    <h4>Número de Teléfono</h4>
+                    <p>849-655-7463</p>
+                </div>
+            </div>
+            <div class="contacto__info-email contacto-cont">
+                <img src="./Imagenes/email.png" alt="img-email" class="contacto__icon-img">
+                <div class="info-email__content inf-content">
+                    <h4>Correo Electrónico</h4>
+                    <p>mathewmiller919@gmail.com</p>
+                </div>
+            </div>
+            <div class="contacto__info-direc contacto-cont">
+                <img src="./Imagenes/mapa.png" alt="img-direc" class="contacto__icon-img">
+                <div class="info-direc__content inf-content">
+                    <h4>Dirección</h4>
+                    <p>Av. Tiradentes, Santo Domingo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+     <footer id="footer">
+        <div class="footer__content">
+            <div class="footer__nosotros footer__content-bloques">
+                <h3>Nosotros</h3>
+                <p>Diagnostic Care combina tecnología avanzada y conocimientos médicos para ofrecer diagnósticos preliminares precisos. Mejoramos el acceso a la atención médica, brindando herramientas para evaluar síntomas y recibir orientación desde casa.</p>
+            </div>
+            <div class="footer__servicios footer__content-bloques">
+                <h3>Servicios</h3>
+                <ul class="footer__content-parrafos">
+                    <li>Diagnósticos rápidos</li>
+                    <li>Análisis avanzado</li>
+                    <li>Consulta de enfermedades</li>
+                    <li>Registro de síntomas</li>
+                    <li>Tratamientos recomendados</li>
+                    <li>Integración de recetas</li>
+                </ul>
+            </div>
+            <div class="footer__importante footer__content-bloques">
+                <h3>Importante</h3>
+                <ul class="footer__content-parrafos">
+                    <li>Seguridad de datos</li>
+                    <li>Privacidad</li>
+                    <li>Accesibilidad</li>
+                    <li>Fiabilidad</li>
+                    <li>Innovación médica</li>
+                    <li>Soporte técnico</li>
+                </ul>
+            </div>
+            <div class="footer__suscibete footer__content-bloques">
+                <h3>Suscribete</h3>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+                <a href="#"><button>Suscribete</button></a>
+            </div>
+        </div>
+        <div class="footer__derechos-reservados">
+            <p>Todos los derechos reservados por NEUROTRONIX © 2024 SAMSUNG INNOVATION CAMPUS </p>
+        </div>
+     </footer>
+    <script src="./Javascript/script.js"></script>
+    <script src="https://kit.fontawesome.com/06f32376e9.js" crossorigin="anonymous"></script>
+</body>
+</html>

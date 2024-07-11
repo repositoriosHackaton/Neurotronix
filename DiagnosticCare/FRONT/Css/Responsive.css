@@ -1,0 +1,220 @@
+:root{
+    --azul-gradiente-text: linear-gradient(180deg, #00DDFF, #1A22EB);
+    --azul-gradiente-bootom: linear-gradient(90deg, #00DDFF, #1A22EB);
+    --bgservices: linear-gradient(to top, #012, #346);
+    --aliceblue: #F0F8FF;
+    --azul-claro-oscuro: #334565;
+    --azul-oscuro: #00022E;
+    --azul-claro: #0AF;
+    --verde-claro: #1AAE67;
+    --blanco: #FFF;
+    --negro: #000;
+    --azul: #00F;
+    --gris-claro: #FFF5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* 1200px: Laptops pequeños
+1024px: Tabletas en modo paisaje
+768px: Tabletas en modo retrato
+480px: Teléfonos en modo paisaje
+414px: Teléfonos más grandes
+375px: Teléfonos medianos
+320px: Teléfonos muy pequeños */
+
+
+@media (max-width: 1200px){
+    /* contenido principal del index  */
+    #main-index {
+        flex-direction: column;
+        gap: 40px;
+        height: 100%;
+    }
+    .main-index__img img{
+        max-height: 800px;
+        min-height: 200px;
+        width: 100%;
+    }
+    /* seccion de informacion  */
+    .section__tipo-de-analisis{
+        flex-direction: column;
+    }
+    /* seccion de enfermedades comunes */
+    .section__enfermedades-cards-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section__enfermedades-cards{
+        margin: auto;
+    }
+    /* seccion de contactos  */
+    .contacto-cont{
+        display: none;
+    }
+    .section-contacto__container h3{
+        text-align: center;
+        font-size: 3rem;
+    }
+    /* pie de pagina  */
+    #footer{
+        height: 100%;
+    }
+    .footer__content{
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 80px 0 40px 0;
+    }
+    /* trabajando en la pagina del catalogo  */
+    #main-catalogo{
+        flex-direction: column;
+        height: 600px;
+    }
+    .main-catalogo__barra-de-busqueda-content{
+        width: 100%;
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1024px){
+    /* nav responsive  */
+    #menu-abrir{
+        display: block;
+        font-size: 25px;
+        color: var(--negro);
+    }
+     .nav__menu{
+        opacity: 0;
+        visibility: hidden;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        width: 45vw;
+        background-color: var(--azul-oscuro);
+        padding-top: 6rem;
+        z-index: 20;
+     }
+     .nav__menu-visible{
+        opacity: 1;
+        visibility: visible;
+     }
+     .nav__link{
+        color: var(--blanco);
+        font-size: 2.5rem;
+     }
+     .nav__link:hover{
+        color: var(--azul-claro);
+        border-bottom: 3px solid var(--azul-claro);
+     }
+     .link-active{
+        color: var(--azul-claro);
+        border-bottom: 3px solid var(--azul-claro);
+    }
+    #menu-cerrar{
+        display: block;
+        font-size: 35px;
+        color: var(--blanco);
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2.5rem 3rem 0 0;
+    }
+    /* contenido principal del index  */
+    .main-index__content h1{
+        font-size: 54px;
+    }
+    .main-index__content p{
+        font-size: 22px;
+    }
+    .buttom{
+        font-size: 18px; 
+    }
+    /* trabajando en la pagina del catalogo  */
+    .main-informacion__encabezado{
+        display: none;
+    }
+    /* parte de la pagina de informacion slider*/
+}
+@media (max-width: 860px){
+    /* seccion de enfermedades comunes */
+    .section__enfermedades-cards-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #section__enfermedades-comunes h2{
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 650px){
+    /* seccion de enfermedades comunes */
+    #section__enfermedades-comunes h2{
+        font-size: 2rem;
+    }
+    /* pie de pagina */
+    #footer{
+        height: 100%;
+    }
+    .footer__content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* secicon de contactos  */
+    .section-contacto__container h3{
+        font-size: 2rem;
+    }
+    /* contenido principal del index  */
+    .main-index__content h1{
+        font-size: 35px;
+    }
+    .main-index__content p{
+        font-size: 18px;
+    }
+    .main-index__content .buttom{
+        font-size: 14px;
+    }
+    /* seccion de tipo de analisis  */
+    .analisis-cont img{
+        width: 50px;
+    }
+    .analisis-cont h3{
+        font-size: 2rem;
+    }
+    #section-informacion h2{
+        font-size: 54px;
+    }
+    .tipo-analisis-cont p{
+        font-size: 18px;
+    }
+    /* enfermedades comunes  */
+    #section__enfermedades-comunes h2{
+        text-align: center;
+    }
+    /* trabajando en la pagina del catalogo  */
+    .main-catalogo__encabezado h2{
+        width: 450px;
+        font-size: 26px;
+        background-size: cover;
+    }
+    .main-catalogo__encabezado h3{
+        font-size: 38px;
+    }
+    .main-catalogo__encabezado img{
+        width: 150px;
+        height: 50px;
+    }
+    .main-catalogo__barra-de-busqueda{
+        padding: 0 10px;
+    }
+    .main-catalogo__barra-de-busqueda input{
+        font-size: 26px;
+    }
+    .main-catalogo__barra-de-busqueda input::placeholder{
+        font-size: 26px;
+    }
+}
