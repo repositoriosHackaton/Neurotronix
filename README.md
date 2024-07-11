@@ -19,8 +19,8 @@ La arquitectura del proyecto se compone de cuatro componentes principales:
 
 ### Modelo de Machine Learning 
 - Se utilizó un modelo de Random Forest para la clasificación de enfermedades basado en síntomas y condiciones climáticas.
-- Precisión del modelo: 77%
-- Recall del modelo: 77%
+- Precisión del modelo: 100%
+- Recall del modelo: 100%
   
 
 ### Métricas de evaluación del modelo
