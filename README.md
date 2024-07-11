@@ -1,65 +1,43 @@
-# Neurotonix
-En este espacio se sube el código creado para el grupo 
+# Diagnostic Care 
 
-Se debe agregar toda la documentación que ustedes consideren pertinente para la compresión de los modelos usados, la ejecución del código y los resultados obtenidos. 
-Puden, si desean, agregar imágenes o resultados obtenidos. 
-
-Recuerden que este readme es su puerta de entrada para su proyecto. 
-
-Un ejemplo puede ser: 
-# Nombre del Proyecto
-
-Breve descripción del proyecto.
-
-## Tabla de contenidos
-
-1. [Nombre](#Nombre)
-2. [Descripción](#descripción)
-3. [Arquitectura](#Arquitectura)
-4. [Proceso](#Proceso)
-5. [Funcionalidades](#Funcionalidades)
-6. [Estado del proyecto](#EstadoDelProyecto)
-7. [Agradecimientos](#Agradecimientos)
+Diagnostic Care es un proyecto innovador diseñado para ofrecer diagnósticos médicos basados en los síntomas presentados por el usuario y el clima de su ubicación. Esta herramienta utiliza inteligencia artificial para analizar los síntomas ingresados por el usuario y proporcionar posibles diagnósticos de enfermedades. Además, cuenta con un chatbot integrado que permite a los usuarios realizar preguntas sobre los resultados obtenidos, obtener más información sobre las condiciones diagnosticadas y recibir recomendaciones básicas de salud. El objetivo principal de Diagnostic Care es proporcionar a los usuarios acceso rápido y conveniente a información médica confiable, ayudándolos a tomar decisiones informadas sobre su salud.
 
 
-* Nombre del proyecto
+## Arquitectura del proyecto
 
-* Breve descripción del proyecto -> Alguna imagen o gif que muestre el proyecto
+La arquitectura del proyecto se compone de cuatro componentes principales:
+- **Front-End**: Interfaz de usuario desarrollada con HTML, CSS y JavaScript.
+- **Back-End**: API desarrollada con Flask en Python que maneja las solicitudes del usuario, procesa los datos y devuelve los diagnósticos.
+- **Base de Datos**: Almacena los datos de síntomas y enfermedades necesarios para el diagnóstico.
+- **API Clima**: Se conecta a una API de clima externa para obtener las condiciones climáticas locales del usuario.
 
-* Arquitectura del proyecto + imagen
 
-* Proceso de desarrollo:
+### Fuente del dataset
+- Dataset de síntomas y enfermedades obtenido de [Kaggle](https://www.kaggle.com/)) y datos meteorológicos de [OpenWeatherMap](https://openweathermap.org/).
+- Se realizó la normalización y estandarización de los datos de síntomas y enfermedades, y la eliminación de registros incompletos.
+- Se implementaron mecanismos para manejar entradas inválidas del usuario y errores de conexión con la API de datos meteorológicos.
 
--Fuente del dataset
--Limpieza de datos (img que lo valide)
--Manejo excepciones/control errores
--¿Qué modelo de Machine Learning están usando?
--Estadísticos (Valores, gráficos, …)
--Métrica(s) de evaluación del modelo
+### Modelo de Machine Learning 
+- Se utilizó un modelo de Random Forest para la clasificación de enfermedades basado en síntomas y condiciones climáticas.
+- Precisión del modelo: 77%
+- Recall del modelo: 77%
+  
 
-* Funcionalidades extra:
+### Métricas de evaluación del modelo
+- Precisión (Accuracy)
+- Recall
+- F1 Score
 
-Ejem 1: Implementación de chatbot
-- Tecnología/Herramientas usadas (Librería, Framework, …)
-- Arquitectura (img)
-- Indicar fuente del dataset
-- Limpieza de datos (ejem: se usó PLN + img que lo validen)
-- Manejo excepciones/control errores
-- En caso de usar un modelo de ML indicar ¿Qué modelo de Machine Learning están usando?
-- Estadísticos (Valores, gráficos, …)
-- Métrica(s) de evaluación del modelo
+## Funcionalidades extra
 
-Ejem 2: Integración del proyecto en una pág web
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
+### Implementación de chatbot
+- **Tecnología/Herramientas usadas**: Python, Flask, Rasa
+- **Limpieza de datos**: Se utilizó procesamiento de lenguaje natural (PLN) para limpiar y normalizar los datos de texto.
+- **Manejo de excepciones y control de errores**: Implementación de manejo de excepciones para entradas no reconocidas y fallos en la API.
+- **Modelo de Machine Learning utilizado**: Modelo de clasificación de intenciones con Rasa NLU.
+- **Estadísticos**:
+  - Precisión del modelo de clasificación de intenciones: 92%
+  - Recall del modelo de clasificación de intenciones: 90%
 
-Ejem 3: Integración del proyecto en un canal WhatsApp, Discord, Telegram, Correo, …
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
-
-Ejem 4: Desarrollo de interfaz gráfica de usuario
-- Tecnología/Herramientas usadas …
-- Arquitectura (img)
-
-Ejem …: …
-- Tecnología/Herramientas usadas …
+### Integración del proyecto en una página web
+- **Tecnología/Herramientas usadas**: HTML, CSS, JavaScript, Flask
