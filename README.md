@@ -45,4 +45,8 @@ La arquitectura del proyecto se compone de cuatro componentes principales:
   - Recall del modelo de clasificación de intenciones: 90%
 
 ### Integración del proyecto en una página web
-- **Tecnología/Herramientas usadas**: HTML, CSS, JavaScript, Flask
+- **Tecnología/Herramientas usadas**: HTML, CSS, Bootstrap JavaScript, Flask
+  
+![image](https://github.com/user-attachments/assets/92fc71bc-e1ea-4ba8-a079-8a7da17300a6)
+
+  
