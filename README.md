@@ -16,6 +16,9 @@ La arquitectura del proyecto se compone de cuatro componentes principales:
 
 ### Fuente del dataset
 - Dataset de síntomas y enfermedades obtenido de [Kaggle](https://www.kaggle.com/) y datos meteorológicos de [Meteosource](https://www.meteosource.com/api/v1/free/point).
+  
+  ![image](https://github.com/user-attachments/assets/64546aff-56e1-40ca-a3e1-062976f78e2d)
+
 - Se realizó la normalización y estandarización de los datos de síntomas y enfermedades, y la eliminación de registros incompletos.
 - Se implementaron mecanismos para manejar entradas inválidas del usuario y errores de conexión con la API de datos meteorológicos.
 
